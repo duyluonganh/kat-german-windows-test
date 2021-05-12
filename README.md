@@ -13,7 +13,8 @@ This problem is also reported at: https://github.com/Microsoft/WinAppDriver/issu
 ## Solution
 There are many workarounds at the above issue but there is no official solution from Microsoft team. The resonable solution I found is switching from German to English keyboard before setText then switching back to German after the action.
 We can use hot-key Left Alf + Shift to toggle keyboard language.
-![Change keyboard](Demo/Change keyboard.png "Change keyboard")
+
+![Change keyboard](https://raw.githubusercontent.com/duyluonganh/kat-german-windows-test/main/Demo/Change%20keyboard.PNG "Change keyboard")
 
 ## Usage
 
@@ -28,4 +29,6 @@ Windows.setText(findWindowsObject('Object Repository/Document'), 'zora driving a
 Windows.sendKeys(findWindowsObject('Document'), Keys.chord(Keys.ALT, Keys.SHIFT))
 ```
 
-Open Test Cases/Set German text and run the test.
+Open "Test Cases/Set German text" and run the test.
+
+Tutorial video in "Demo/German Windows Test.mp4"
